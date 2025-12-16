@@ -1,1 +1,13 @@
 @tailwind base; @tailwind components; @tailwind utilities; body { background-color: #f0f7ff; }
+@keyframes moveLeftRight {
+  0%, 100% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+}
+
+.animate-smooth-move {
+  animation: moveLeftRight 4s ease-in-out infinite;
+}
